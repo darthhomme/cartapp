@@ -1,7 +1,7 @@
 <h1>Your Cart</h1>
 
 <% if @cart.empty? %>
-  <p>Your cart is currently empty. Fill it up!</p>
+  <p>Your cart is currently empty.</p>
 <% else %>
 <%= link_to 'Empty Your Cart', cart_clear_path %>
 <% end %>
