@@ -1,15 +1,15 @@
 <h1>Your Cart</h1>
 
-<% if @cart.empty? %>
+<% if @cart.empty? %> <!-- If cart is empty, it will say so -->
   <p>Your cart is currently empty.</p>
 <% else %>
-<%= link_to 'Empty Your Cart', cart_clear_path %>
+<%= link_to 'Empty Your Cart', cart_clear_path %> <!-- A link to a cart controller action cartClear which will empty out your cart  -->
 <% end %>
 <br></br><br></br><br></br>
 
 <% total = 0 %>
 <ul id="list">
-<% @cart.each do | id, quantity | %>
+<% @cart.each do | id, quantity | %> 
     <% product = Product.find_by_id(id) %>
 
   <li>
