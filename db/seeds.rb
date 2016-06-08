@@ -16,6 +16,11 @@
 #   {id: 5, name: "Nintendo 3DS", price: 174.95, active: true}
 # ])
 
+
+# next time I will try like ^ that
+
+# This actually works. I added all of these below and then I ran 'rake db:seed'
+
 Product.create("name": "Trustforge Auto Tag Mount", "brand": "Brions", "model": "X7", "sku": "13180a6d-86e0-408c-a5c0-28254bd97720", "price": 281, "desc": "Et sed quis eligendi non ut et sunt eveniet. Atque necessitatibus aliquam et soluta. Commodi quo molestiae dolor est repudiandae quos error asperiores. Fuga quod aperiam laborum dolores.")
 Product.create("name": "Onenix Air Component", "brand": "Ambalt", "model": "OR-3186", "sku": "024f8ec0-193e-4897-8b3c-1b315691a3b5", "price": 126, "desc": "Harum aut autem magni earum. Tenetur quod tempore aut expedita. Itaque consequatur et laborum blanditiis eius magnam exercitationem. Nihil sequi sed minus ipsam sed. Rerum enim sint quisquam voluptas.")
 Product.create("name": "Socell Video Adapter", "brand": "Brens", "model": "S86", "sku": "0d4e913a-8d3c-4c8c-b673-99744fb213e4", "price": 101, "desc": "Omnis repellendus dolore atque eligendi quae id. Numquam quia voluptate sequi quae itaque sapiente. Ut dolores et fuga enim asperiores iure consequuntur.")
