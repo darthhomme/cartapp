@@ -19,6 +19,8 @@
     <%= link_to "Contact", page_contact_path %>
   </div>
 
+<!-- the signin logic is so that both links don't appear at once. If you're already signed in, you shouldn't see a sign in link -->
+
   <div id="sign_in">
     <% if user_signed_in? %>
       <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>

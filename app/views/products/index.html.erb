@@ -32,7 +32,7 @@
               <p><b>DESC:</b> <%= product.desc %></p>
               <li><%= link_to 'Edit', edit_product_path(product) %></li>
               <li><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-              <li><a href="/cart/<%= product.id %>"> Add to Cart </a></li> 
+              <li><a href="/cart/<%= product.id %>"> Add to Cart </a></li>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
