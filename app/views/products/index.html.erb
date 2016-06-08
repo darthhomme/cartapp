@@ -3,34 +3,43 @@
 <!-- <%= link_to 'New Product', new_product_path %> Do we really need this? I doubt it-->
 <div class="container">
   <% @products.each do |product| %>
-    <div id="modal-content" class="col-md-4"><span class="close">
-      <ul>
-        <li><b>Name:</b> <%= product.name %></li>
-        <li><b>Brand:</b> <%= product.brand %></li>
-        <li><b>Model:</b> <%= product.model %></li>
-        <li><b>Price:</b> <%= product.price %></li>
-        <li><b>SKU:</b> <%= product.sku %></li>
-        <li><b>DESC:</b> <%= product.desc %></li>
-        <li><%= link_to 'Show', product %></li>
-        <li><%= link_to 'Edit', edit_product_path(product) %></li>
-        <li><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-        <li><a href="/cart/<%= product.id %>"> Add to Cart </a></li>
-      </ul>
-    </span>
+  <div class="col-md-4">
+    <ul>
+      <li><b>Name:</b> <%= product.name %></li>
+      <li><b>Brand:</b> <%= product.brand %></li>
+      <li><b>Model:</b> <%= product.model %></li>
+      <li><b>Price:</b> <%= product.price %></li>
+      <li><%= link_to 'Show', product %></li>
+      <li><%= link_to 'Edit', edit_product_path(product) %></li>
+      <li><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      <li><a href="/cart/<%= product.id %>"> Add to Cart </a></li>
+    </ul>
+    <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">x</span>
+      <div class="modal-content col-md-4">
+        <ul>
+          <li><b>Name:</b> <%= product.name %></li>
+          <li><b>Brand:</b> <%= product.brand %></li>
+          <li><b>Model:</b> <%= product.model %></li>
+          <li><b>Price:</b> <%= product.price %></li>
+          <li><b>SKU:</b> <%= product.sku %></li>
+          <li><b>DESC:</b> <%= product.desc %></li>
+          <li><%= link_to 'Show', product %></li>
+          <li><%= link_to 'Edit', edit_product_path(product) %></li>
+          <li><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+          <li><a href="/cart/<%= product.id %>"> Add to Cart </a></li>
+        </ul>
+      </div>
     </div>
-    <% end %>
-</div>
 
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">x</span>
-    <p>Some text in the Modal..</p>
   </div>
-
+  </div>
+    <% end %>
 </div>

@@ -2,10 +2,10 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 // Get the modal
-var modal = document.getElementById('modal-content');
+var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("col-md-4");
+var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
