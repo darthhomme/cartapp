@@ -5,11 +5,11 @@
 <% else %>
 <%= link_to 'Empty Your Cart', cart_clear_path %> <!-- A link to a cart controller action cartClear which will empty out your cart  -->
 <% end %>
-<br></br><br></br><br></br>
+<br></br><br></br>
 
 <% total = 0 %>
 <ul id="list">
-<% @cart.each do | id, quantity | %> 
+<% @cart.each do | id, quantity | %>
     <% product = Product.find_by_id(id) %>
 
   <li>
@@ -19,8 +19,8 @@
       <p><%= number_to_currency(product.price, :unit => '$' )%></p>
       <p>Quantity: <%= quantity %></p>
   </li>
-  <% total += quantity * product.price %>
+  <% total += quantity * product.price %> <!-- As you add items to this cart, the total will be calcuated, otherwise refer to line 10-->
 <% end %>
 
-<p><b><%= number_to_currency(total, :unit => '$')%></b></p>
+<p><b><%= number_to_currency(total, :unit => '$')%></b></p> <!-- making this column from integer into something befitting currency -->
 </ul>
