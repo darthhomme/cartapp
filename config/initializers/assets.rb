@@ -8,4 +8,9 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-Rails.application.config.assets.precompile += %w( products.js )
+Rails.application.config.assets.precompile += %w( application.css )
+Rails.application.config.assets.precompile += %w( cart.scss )
+Rails.application.config.assets.precompile += %w( page.scss )
+Rails.application.config.assets.precompile += %w( products.scss )
+Rails.application.config.assets.precompile += %w( scaffolds.scss )
+Rails.application.config.assets.precompile += %w( welcome.scss )
