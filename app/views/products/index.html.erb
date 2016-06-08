@@ -1,22 +1,23 @@
 <p id="notice"><%= notice %></p>
 <h1>Listing Products</h1>
 <!-- <%= link_to 'New Product', new_product_path %> Do we really need this? I doubt it-->
-<div class="col-md-4">
+<div class="container">
   <% @products.each do |product| %>
-  <ul>
-    <li>Name: <%= product.name %></li>
-    <li>Brand: <%= product.brand %></li>
-    <li>Model: <%= product.model %></li>
-    <li>Price: <%= product.price %></li>
-    <li>SKU: <%= product.sku %></li>
-    <li>DESC: <%= product.desc %></li>
-    <li><%= link_to 'Show', product %></li>
-    <li><%= link_to 'Edit', edit_product_path(product) %></li>
-    <li><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-    <li><a href="/cart/<%= product.id %>"> Add to Cart </a></li>
-
+    <div class="col-md-4">
+      <ul>
+        <li>Name: <%= product.name %></li>
+        <li>Brand: <%= product.brand %></li>
+        <li>Model: <%= product.model %></li>
+        <li>Price: <%= product.price %></li>
+        <li>SKU: <%= product.sku %></li>
+        <li>DESC: <%= product.desc %></li>
+        <li><%= link_to 'Show', product %></li>
+        <li><%= link_to 'Edit', edit_product_path(product) %></li>
+        <li><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <li><a href="/cart/<%= product.id %>"> Add to Cart </a></li>
+      </ul>
+    </div>
     <% end %>
-  </ul>
 </div>
   <!-- <table>
     <thead>

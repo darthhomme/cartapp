@@ -12,9 +12,7 @@
  *
  *= require_tree .
  *= require_self
- *= require_products
  *= require_cart
- *= require__grid
  */
 
 

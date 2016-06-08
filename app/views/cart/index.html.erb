@@ -13,10 +13,10 @@
     <% product = Product.find_by_id(id) %>
 
   <li>
-      <%= link_to product.name, product %>
-      <p><%= product.brand %></p>
-      <p><%= product.model %></p>
-      <p><%= number_to_currency(product.price, :unit => '$' )%></p>
+      <p>Name: <%= link_to product.name, product %></p>
+      <p>Brand: <%= product.brand %></p>
+      <p>Model: <%= product.model %></p>
+      <p>Price: <%= number_to_currency(product.price, :unit => '$' )%></p>
       <p>Quantity: <%= quantity %></p>
   </li>
   <% total += quantity * product.price %> <!-- As you add items to this cart, the total will be calcuated, otherwise refer to line 10-->
