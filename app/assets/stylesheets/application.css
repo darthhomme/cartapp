@@ -14,7 +14,9 @@
  *= require_self
  *= require_products
  *= require_cart
+ *= require__grid
  */
+
 
  *{
     margin: 0;
