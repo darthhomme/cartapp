@@ -1,0 +1,19 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container{
+}
+
+// Making the grid the same height is a way to account for differences in length of descriptions
+
+// Just trying to give my grid some character so the individual columns are more defined
+
+.col-md-4{
+  margin: 0;
+  height: 375px;
+  border: 0.1em solid black;
+
+}
+ul li{
+  list-style-type: none;
+}
