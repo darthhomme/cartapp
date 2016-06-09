@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   get '/cart/:id' => 'cart#add'
 
 
-  get 'users/sign_out'
-  get 'users/sign_in'
+  get 'users/sign_out' => 'page#home'
+
   resources :products
   root 'page#home'
   # root 'welcome#index'
