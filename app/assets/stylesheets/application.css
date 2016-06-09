@@ -12,9 +12,9 @@
  *
  *= require_tree .
  *= require_self
- *= require cart
- *= require products
- *= require scaffolds
+ *= require_cart
+ *= require_products
+ *= require_scaffolds
  */
 
 
