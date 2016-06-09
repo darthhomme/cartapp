@@ -5,8 +5,8 @@ group :production do
   gem 'thin'
   gem 'pg'
 end
+gem 'jquery-rails'
 group :assets do
-  gem 'jquery-rails'
   gem 'sass-rails', '~> 5.0'
   gem 'twitter-bootstrap-rails'
 end
