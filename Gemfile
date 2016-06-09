@@ -16,7 +16,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'ruby'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor', group: :production
 group :development, :test do
