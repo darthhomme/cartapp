@@ -13,4 +13,5 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( page.scss )
 Rails.application.config.assets.precompile += %w( products.css )
 Rails.application.config.assets.precompile += %w( scaffolds.css )
-# Rails.application.config.assets.precompile += %w( welcome.scss )
+Rails.application.config.assets.precompile += %w( products.js)
+Rails.application.config.assets.precompile += %w( welcome.scss )
