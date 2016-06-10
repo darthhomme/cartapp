@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get '/cart/clear' => 'cart#clearCart'
   get '/cart/:id' => 'cart#add'
 
+  get '/users/sign_out'
+  get '/users/sign_in'
+
   resources :products
   root 'page#home'
   # root 'welcome#index'
